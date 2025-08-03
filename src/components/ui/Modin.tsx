@@ -17,7 +17,7 @@ const Modin = ({mood,setMood,onGenerate,disabled}:Props) => {
   return (
     <div className='space-y-4 '>
        <Input
-       placeholder='How you Felling today?'
+       placeholder='How you Feeling today?'
        value={mood}
        onChange={e => setMood(e.target.value)}
        disabled = {disabled}
