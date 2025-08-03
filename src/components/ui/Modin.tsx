@@ -1,5 +1,6 @@
 
 
+import React from 'react';
 import {Input} from '@/components/ui/input'
 import { Button  } from "@/components/ui/button";
 
@@ -19,7 +20,7 @@ const Modin = ({mood,setMood,onGenerate,disabled}:Props) => {
        <Input
        placeholder='How you Feeling today?'
        value={mood}
-       onChange={e => setMood(e.target.value)}
+       onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMood(e.target.value)}
        disabled = {disabled}
        />
      <Button className='w-full bg-blue-500 hover:bg-blue-600 text-white' onClick={onGenerate} disabled={disabled}>Generate</Button>
